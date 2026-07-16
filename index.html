@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>骨年齢判定 (RUS法)</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <button id="menu-btn" aria-label="メニューを開く">
+            <svg viewBox="0 0 24 24" width="28" height="28"><path fill="currentColor" d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+        </button>
+        <h1 id="header-title">骨年齢判定</h1>
+        <div style="width: 28px;"></div> <!-- Placeholder for alignment -->
+    </header>
+
+    <!-- Drawer Navigation -->
+    <nav id="drawer" class="drawer">
+        <div class="drawer-header">
+            <h2>入力状況</h2>
+            <button id="drawer-close-btn" aria-label="閉じる">✕</button>
+        </div>
+        <ul id="bone-list" class="bone-list">
+            <!-- JavaScript will populate this -->
+        </ul>
+        <div class="drawer-footer">
+            <button id="reset-btn" class="btn-danger">リセット (最初から)</button>
+        </div>
+    </nav>
+    <div id="drawer-overlay" class="overlay"></div>
+
+    <!-- Main Content Area -->
+    <main>
+        <!-- Step 1: Gender Selection -->
+        <section id="step1" class="view">
+            <div class="step-content">
+                <h2>性別を選択してください</h2>
+                <div class="gender-buttons">
+                    <button id="btn-boy" class="btn-gender btn-boy">男児</button>
+                    <button id="btn-girl" class="btn-gender btn-girl">女児</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Step 2: Bone Evaluation -->
+        <section id="step2" class="view hidden">
+            <div class="step-content">
+                <div class="bone-header">
+                    <h2 id="bone-title">骨の名前</h2>
+                    <span id="bone-progress" class="progress-text"></span>
+                </div>
+                <div id="image-grid" class="image-grid">
+                    <!-- Images A-I populated by JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Step 4: Result -->
+        <section id="step4" class="view hidden">
+            <div class="step-content">
+                <h2>判定結果</h2>
+                <div class="result-box">
+                    <div class="result-item">
+                        <span class="result-label">RUS総スコア</span>
+                        <span id="total-score" class="score-value">0</span>
+                    </div>
+                    <div class="result-item">
+                        <span class="result-label">骨年齢</span>
+                        <span id="bone-age" class="age-value">-</span>
+                    </div>
+                </div>
+                <button id="restart-btn" class="btn-primary btn-large">最初からやり直す</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
