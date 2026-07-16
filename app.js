@@ -4,15 +4,15 @@ const BONE_LIST = [
     { id: "ulna", name: "尺骨", assetDir: "ulna", maxStage: 'H' },
     { id: "metacarpal_1", name: "第1中手骨", assetDir: "metacarpal_1", maxStage: 'I' },
     { id: "metacarpal_3", name: "第3中手骨", assetDir: "metacarpal_3", maxStage: 'I' },
-    { id: "metacarpal_5", name: "第5中手骨", assetDir: "metacarpal_5", maxStage: 'I' },
+    { id: "metacarpal_5", name: "第5中手骨", assetDir: "metacarpal_3", maxStage: 'I' },
     { id: "prox_phalanx_1", name: "第1基節骨", assetDir: "prox_phalanx_1", maxStage: 'I' },
     { id: "prox_phalanx_3", name: "第3基節骨", assetDir: "prox_phalanx_3", maxStage: 'I' },
-    { id: "prox_phalanx_5", name: "第5基節骨", assetDir: "prox_phalanx_5", maxStage: 'I' },
+    { id: "prox_phalanx_5", name: "第5基節骨", assetDir: "prox_phalanx_3", maxStage: 'I' },
     { id: "mid_phalanx_3", name: "第3中節骨", assetDir: "middle_phalanx_3", maxStage: 'I' },
     { id: "mid_phalanx_5", name: "第5中節骨", assetDir: "middle_phalanx_5", maxStage: 'I' },
     { id: "dist_phalanx_1", name: "第1末節骨", assetDir: "dist_phalanx_1", maxStage: 'I' },
     { id: "dist_phalanx_3", name: "第3末節骨", assetDir: "dist_phalanx_3", maxStage: 'I' },
-    { id: "dist_phalanx_5", name: "第5末節骨", assetDir: "dist_phalanx_5", maxStage: 'I' }
+    { id: "dist_phalanx_5", name: "第5末節骨", assetDir: "dist_phalanx_3", maxStage: 'I' }
 ];
 
 const boysScores = {
